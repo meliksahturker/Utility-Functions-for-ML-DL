@@ -1,4 +1,4 @@
-# Utility-Functions-for-ML-Classification
+# Utility-Functions-for-ML-Classification-Evaluation
 
 - plot_roc(y, probs): 
 
@@ -10,4 +10,4 @@
   
 - all_metrics_together(y, probs, preds):
 
-  given ground truth, probabilites an predictions, sums up classification metrics recall, precision, f1_score and auc in a dataframe.
+  given ground truth, probabilites an predictions, sums up classification metrics accuracy, recall, precision, f1_score and auc in a dataframe.
