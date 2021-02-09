@@ -1,13 +1,34 @@
-# Utility-Functions-for-ML-Classification-Evaluation
+# Deep Learning with LSTM and AutoEncoder architectures
 
-- plot_roc(y, probs): 
+### set_train_test:
+Creates batches of train and test data for stateful sequential modelling.
+Contains lots of utilities, returning ordinal index, timestamp, scaler used, etc.
 
-  given ground truth and probabilities, plots the ROC curve.
+### create_ar_lstm_model:
+Creates stateful AutoRegressive LSTM model that predicts 1 time-step ahead.
 
-- search_probability_threshold(y, probs):
+### create_lstm_ae_model:
+Creates LSTM AutoEncoder.
 
-  given ground truth and probabilities, searchs for the threshold that maximizes the desired metric. (currently F1_score)
+### create_lstm_vae_model:
+Creates LSTM Variational AutoEncoder.
+
+### create_ae_model:
+Creates AutoEncoder model.
+
+### error_to_probability:
+Given a threshold and errors, converts the error, that is the difference between the prediction and ground-truth, into anomaly probability score.
+
+
+
+
+# Classification-Evaluation
+
+### plot_roc: 
+Given ground truth and probabilities, plots the ROC curve.
+
+### search_probability_threshold:
+Given ground truth and probabilities, searchs for the threshold that maximizes the desired metric. (currently F1_score)
   
-- all_metrics_together(y, probs, preds):
-
-  given ground truth, probabilites an predictions, sums up classification metrics accuracy, recall, precision, f1_score and auc in a dataframe.
+### all_metrics_together:
+Given ground truth, probabilites an predictions, sums up classification metrics accuracy, recall, precision, f1_score and auc in a dataframe.
