@@ -171,5 +171,5 @@ def create_lstm_vae_model(batch_size, time_steps, number_of_features, int_dim, l
         precision = metrics.precision_score(y, y_hat)
         f1 = metrics.f1_score(y, y_hat)
 
-        df = pd.DataFrame({'Accuracy': accuracy, 'Recall': recall, 'Precision': precision, 'F1': f1})
+        df = pd.DataFrame({'Accuracy': accuracy, 'Recall': recall, 'Precision': precision, 'F1': f1}, index = ['metric_value'])
         return df
